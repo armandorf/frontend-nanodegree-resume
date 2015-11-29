@@ -59,25 +59,23 @@ bio.display();
 
 
 var work = {
-    "jobs": [
-        {
-            "employer": "Apttus Corporation",
-            "title": "Software Engineer",
-            "location": "San Mateo, CA",
-            "dates": "08/2015-Present",
-            "description": "As a full stack sofware engineer, I create, test, and maintain software across a " +
-                           "range of different software products in the company, as well as fix bugs as part of the " +
-                           "ongoing software development process in an agile working environment."
-        },
-        {
-            "employer": "The Home Depot",
-            "title": "Sales Representative",
-            "location": "San Jose, CA",
-            "dates": "06/2012-11/2014",
-            "description": "Worked in the plumbing department, troubleshooting customers " +
-                           "plumbing problems as well as other home maintenance issues."
-        }
-    ],
+    "jobs": [{
+        "employer": "Apttus Corporation",
+        "title": "Software Engineer",
+        "location": "San Mateo, CA",
+        "dates": "08/2015-Present",
+        "description": "As a full stack sofware engineer, I create, test, and maintain software across a " +
+                       "range of different software products in the company, as well as fix bugs as part of the " +
+                       "ongoing software development process in an agile working environment."
+    },
+    {
+        "employer": "The Home Depot",
+        "title": "Sales Representative",
+        "location": "San Jose, CA",
+        "dates": "06/2012-11/2014",
+        "description": "Worked in the plumbing department, troubleshooting customers " +
+                       "plumbing problems as well as other home maintenance issues."
+    }],
     "display": function () {
         var workExperience = $("#workExperience");
 
@@ -103,14 +101,12 @@ work.display();
 
 
 var projects = {
-    "projects": [
-        {
-            "title": "Portfolio Website",
-            "dates": "05/2015-06/2015",
-            "description": "A website to showcase the projects I have worked on.",
-            "images": "images/portfolio-website-screenshot.jpg"
-        }
-    ],
+    "projects": [{
+        "title": "Portfolio Website",
+        "dates": "05/2015-06/2015",
+        "description": "A website to showcase the projects I have worked on.",
+        "images": "images/portfolio-website-screenshot.jpg"
+    }],
     "display": function () {
         for (var i = 0; i < this.projects.length; i++) {
             $("#projects").append(HTMLprojectStart);
@@ -138,27 +134,23 @@ var monthNames = ["January", "February", "March", "April", "May", "June",
 
 
 var education = {
-    "schools": [
-        {
-            "name": "San Jose State University",
-            "location": "San Jose, CA",
-            "degree": "BS",
-            "majors": [
-                "Computer Science"
-            ],
-            // dates must be an integer
-            "dates": 1432105200000,
-            "url": "http://www.sjsu.edu"
-        }
-    ],
-    "onlineCourses": [
-        {
-            "title": "Front-End Web Developer Nanodegree",
-            "school": "Udacity",
-            "date": 1451520000000,  // i.e. November 30, 2015
-            "url": "http://www.udacity.com"
-        }
-    ],
+    "schools": [{
+        "name": "San Jose State University",
+        "location": "San Jose, CA",
+        "degree": "BS",
+        "majors": [
+            "Computer Science"
+        ],
+        // dates must be an integer
+        "dates": 1432105200000,
+        "url": "http://www.sjsu.edu"
+    }],
+    "onlineCourses": [{
+        "title": "Front-End Web Developer Nanodegree",
+        "school": "Udacity",
+        "date": 1451520000000,  // i.e. November 30, 2015
+        "url": "http://www.udacity.com"
+    }],
     "display": function () {
 
         // SCHOOLS
