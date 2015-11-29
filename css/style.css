@@ -20,6 +20,10 @@ h1 {
     display: inline;
 }
 
+#role {
+    color: aliceblue;
+}
+
 h2 {
     font-weight: bold;
     font-size: 24px;
@@ -113,9 +117,8 @@ a {
     background-color: #4A4A4A;
 }
 
-/* TODO: Replace with image later */
 #header {
-    background-color: #484848;
+    background-color: #606060;
 }
 
 .flex-box {

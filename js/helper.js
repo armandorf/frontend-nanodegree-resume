@@ -13,7 +13,7 @@
  replace the %data% placeholder text you see in them.
  */
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span>%data%</span><hr/>';
+var HTMLheaderRole = '<span id="role">%data%</span><hr/>';
 
 // NOTE to Grader: I used the generic container for all contact information
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';

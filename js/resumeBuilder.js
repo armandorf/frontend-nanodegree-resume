@@ -220,5 +220,20 @@ var education = {
 };
 education.display();
 
+var letsConnect = {
+    display: function () {
+        var footerContacts = $('#letsConnect #footerContacts');
+
+        for (var contact in bio.contacts) {
+            var formattedContact = HTMLcontactGeneric.replace("%contact%", contact);
+            formattedContact = formattedContact.replace("%data%", bio.contacts[contact]);
+
+            footerContacts.append(formattedContact);
+        }
+    }
+};
+letsConnect.display();
+
+
 // append map to page
 $('#mapDiv').append(googleMap);
